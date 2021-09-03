@@ -1,5 +1,5 @@
 async function getData() {
-	const response = await fetch("../logs");
+	const response = await fetch("../checkins");
 	const data = await response.json();
 	const myMap = L.map("issMap").setView([15, 50], 1);
 	const attribution = `
