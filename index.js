@@ -4,17 +4,20 @@ const Datastore = require("nedb");
 const database = new Datastore("database.db");
 const app = express();
 
-const port = process.env.PORT || 3000;
-
 require("dotenv").config();
 
-app.listen(port, () => console.log(`Listening at ${port}`));
+const port = process.env.PORT || 3000;
+const host = "0.0.0.0";
+
+app.listen(port, host, () => {
+	console.log("Express server listening...");
+});
 app.use(express.static("public"));
 app.use(express.json({ limit: "1mb" }));
 
 database.loadDatabase();
 
-app.get("/logs", (request, response) => {
+app.get("/checkins", (request, response) => {
 	database.find({}, (err, data) => {
 		response.json(data);
 		if (err) {
