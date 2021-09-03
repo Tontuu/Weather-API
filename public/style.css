@@ -1,0 +1,88 @@
+body {
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#root {
+	margin: 10px;
+	font-family: Arial;
+	padding: 10px;
+	background-color: rgb(244, 244, 244);
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#condition {
+	color: white;
+	background-color: #7ba4c9;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 200px;
+	box-shadow: rgb(0 0 0 / 0.15) 0.95px 0.95px 2.6px;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+button {
+	margin: -5px 15px;
+	margin-bottom: 10px;
+	background-color: #7ba4c9;
+	border: none;
+	color: #f2f2f2;
+	border-radius: 200px;
+	box-shadow: rgb(0 0 0 / 23%) 1px 1px 3px;
+	height: 5%;
+	width: 13%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: monospace;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+#alertDiv {
+	position: relative;
+	background-color: #f4f4f4;
+	border-radius: 200px;
+	margin-left: 15px;
+	padding: 20px;
+	font-family: arial;
+	box-shadow: inset rgb(0 0 0 / 23%) 2px 3px 3px;
+}
+
+button:hover {
+	background-color: #557b9d;
+	color: white;
+}
+
+.topnav {
+	font-family: arial;
+	background-color: #7ba4c9;
+	overflow: hidden;
+	padding: 14px 16px;
+}
+
+.linkes a {
+	float: right;
+	color: #f2f2f2;
+	padding: 3px 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.brand a {
+	position: relative;
+	padding: 3px;
+	margin-left: 15px;
+	float: left;
+	font-weight: bolder;
+	color: white;
+	text-decoration: none;
+}
