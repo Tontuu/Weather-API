@@ -5,8 +5,6 @@ const database = new Datastore("database.db");
 const app = express();
 require("dotenv").config();
 
-console.log(process.env);
-
 app.listen(3000, () => console.log("Listening at 3000"));
 app.use(express.static("public"));
 app.use(express.json({ limit: "1mb" }));
